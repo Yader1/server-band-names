@@ -20,8 +20,6 @@
                 console.log('Perdimos comunicacion del servidor');
             });
 
-            socket.emit('mensaje', {nombre: 'Yader'});
-
             socket.on('nuevo-mensaje', function(payload){
                 console.log('Escuchando:', payload);
             });
